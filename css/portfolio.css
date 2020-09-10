@@ -1,0 +1,108 @@
+/*линия портфолио*/
+.line {
+  border: 1px solid #ececec;
+}
+.sait-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.portfolio-nav .link:hover,
+.portfolio-nav .link:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  /*outline: 2px solid turquoise;*/
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.section-title-list {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0px;
+  /*outline: 2px solid turquoise;*/
+}
+.portfolio-text {
+  padding: 20px 24px;
+}
+/*кнопки портфолио оформление*/
+
+.portfolio-nav .item-f + .item-f {
+  margin-left: 8px;
+}
+.button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-color: var(--animation-direction);
+  color: var(--logo-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.portfolio-nav {
+  margin-top: 0;
+  padding-bottom: 50px;
+  padding-top: 94px;
+  display: flex;
+  justify-content: center;
+}
+.item-list:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-buttom .button:hover,
+.portfolio-buttom .button:focus {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* карточки 9 штук */
+.section-portfolio {
+  outline: 2px solid turquoise;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card {
+  display: block;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+
+.portfolio .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio .item {
+  width: calc((100% - 30px * 2) / 3);
+}
+.portfolio .item:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio .item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
