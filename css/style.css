@@ -260,3 +260,6 @@
 .clients-item:hover {
   color: var(--accent-color);
 }
+.clients-item:hover {
+  border-color: var(--accent-color);
+}
