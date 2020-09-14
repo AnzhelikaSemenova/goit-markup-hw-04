@@ -120,19 +120,16 @@
 
 .section-title-list {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
   margin-top: 0;
   margin-bottom: 50px;
 }
 
 .section-title-feauter {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -141,18 +138,32 @@
   margin-bottom: 10px;
 }
 /*оформление соц сетей нашей команды*/
+.team-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
 .team-icon .icon {
   width: 20px;
   height: 20px;
-}
-.icon {
   fill: currentColor;
 }
-.team-icon .icon:hover {
-  background-color: var(--accent-color);
-  fill: var(--primary-bg-color);
+.sicial-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
-
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon .team-icon .icon-item:not(:last-child) {
+  margin-right: 10px;
+}
 .feauter-title {
   font-weight: 400;
   font-size: 16px;
@@ -172,4 +183,54 @@
 }
 .item:not(:last-child) {
   margin-right: 50px;
+}
+/*Наши партнеры*/
+.partner {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.company {
+  display: flex;
+}
+.clients {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.clients:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  padding: 0;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cosial-color);
+  border-radius: 4px;
+  color: var(--cosial-color);
+}
+
+.feauter-company {
+  width: 44px;
+  height: 49px;
+  fill: currentColor;
+}
+.section .company .link:hover,
+.section .company .link:focus {
+  color: var(--accent-color);
+}
+.clients :hover,
+.clients :focus {
+  color: var(--accent-color);
 }

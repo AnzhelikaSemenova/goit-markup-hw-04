@@ -7,6 +7,7 @@
   --animation-direction: #f5f4fa;
   --footer-bg-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --social-color: #afb1b8;
 }
 
 body {
@@ -136,20 +137,22 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 0.87;
   text-decoration: none;
 }
 /*оформление майла и телефона в хедере*/
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-style: normal;
+}
 .item .item-feauter {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
-  background-size: contain;
-  background-position: center;
 }
 
 .footer-title {
@@ -200,4 +203,38 @@ ul {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 20px;
+}
+/*Футер соц-сети*/
+.additional-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.additional-item:not(:last-child) {
+  margin-right: 10px;
+}
+.basement-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-bg-color);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.basement-social .link:hover,
+.basement-social .link:focus {
+  color: var(--primary-bg-color);
+}
+.additional-item .link:hover,
+.additional-item .link:focus {
+  background-color: var(--accent-color);
 }
