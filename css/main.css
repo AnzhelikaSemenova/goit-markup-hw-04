@@ -7,7 +7,7 @@
   --animation-direction: #f5f4fa;
   --footer-bg-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
-  --social-color: #afb1b8;
+  --сosial-color: #afb1b8;
 }
 
 body {
@@ -29,6 +29,8 @@ body {
   padding: 0;
 }
 .img {
+  padding: 0px;
+  margin: 0px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -230,11 +232,21 @@ ul {
   height: 20px;
   fill: currentColor;
 }
-.basement-social .link:hover,
-.basement-social .link:focus {
-  color: var(--primary-bg-color);
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
-.additional-item .link:hover,
-.additional-item .link:focus {
+.additional {
+  margin-left: 70px;
+}
+.basement-social svg {
+  fill: currentColor;
+}
+.basement-social:hover {
   background-color: var(--accent-color);
+}
+.basement-social:hover svg {
+  fill: var(--primary-bg-color);
 }

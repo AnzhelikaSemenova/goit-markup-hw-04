@@ -146,7 +146,6 @@
 .team-icon .icon {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 .sicial-link {
   display: flex;
@@ -155,14 +154,32 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--сosial-color);
 }
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.sicial-link svg {
+  fill: currentColor;
+}
+.sicial-link:hover {
+  background-color: var(--accent-color);
+}
+.sicial-link:hover svg {
+  fill: var(--primary-bg-color);
+}
 .icon .team-icon .icon-item:not(:last-child) {
   margin-right: 10px;
+}
+/*Оформление карточек команды*/
+.team-ticket {
+  background-color: var(--primary-bg-color);
+  padding: 30px 32px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .feauter-title {
   font-weight: 400;
@@ -197,14 +214,7 @@
 .company {
   display: flex;
 }
-.clients {
-  display: flex;
-  width: 170px;
-  height: 90px;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-}
+
 .clients:not(:last-child) {
   margin-right: 30px;
 }
@@ -213,24 +223,40 @@
   width: 170px;
   height: 90px;
   padding: 0;
-  background-position: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--сosial-color);
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--cosial-color);
-  border-radius: 4px;
-  color: var(--cosial-color);
+  color: var(--сosial-color);
 }
 
-.feauter-company {
-  width: 44px;
-  height: 49px;
+.logoone {
+  width: 45px;
+  max-height: 90px;
   fill: currentColor;
 }
-.section .company .link:hover,
-.section .company .link:focus {
-  color: var(--accent-color);
+.logotwo {
+  width: 40px;
+  max-height: 90px;
+  fill: currentColor;
 }
-.clients :hover,
-.clients :focus {
+.logofour {
+  width: 80px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logofive {
+  width: 60px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.logosix {
+  width: 90px;
+  max-height: 90px;
+  fill: currentColor;
+}
+.clients-item:hover {
   color: var(--accent-color);
 }
